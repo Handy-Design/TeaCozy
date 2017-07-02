@@ -1,0 +1,344 @@
+/*** SHARED VALUES ***/
+
+html,
+body{
+  background-color: rgb(238,255,216);
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+#main{
+  background-color: rgb(238,255,216);
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+/*** TO TOP BUTTON ***/
+
+#totop{
+  text-decoration: none;
+  background-color: darkseagreen;
+  color: seashell;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  bottom: 15px;
+  right: 15px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 1);
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  -o-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg);
+  z-index: 2;
+}
+
+#totop a{
+  font-family: Helvetica, Arial;
+  text-decoration: none;
+  color: seashell;
+  -webkit-transform: rotate(9deg);
+  -moz-transform: rotate(9deg);
+  -o-transform: rotate(9deg);
+  -ms-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+
+
+/*** HEADER ***/
+
+#header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: seagreen;
+  z-index: 2;
+}
+
+#header img{
+  margin-left: 10px;
+}
+
+.header-container{
+  min-height: 69px;
+  border-bottom: 5px solid darkseagreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav{
+  width: 320px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav a{
+  padding: 5px;
+  text-decoration: none;
+  font-family: Helvetica, Arial;
+  font-size: 14px;
+  color: seashell;
+  letter-spacing: 1px;
+}
+
+
+/*** MISSION ***/
+
+#mission{
+  margin: 0px 50px;
+  display: flex;
+  height: 700px;
+  width: 1200px;
+  background-image: url("../images/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner{
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.banner h2,
+.banner h4{
+  padding: 10px;
+  font-family: Helvetica, Arial;
+  color: seashell;
+}
+
+
+/*** FEATURED ***/
+
+#featured{
+  margin: 0px 50px;
+  padding: 0px 30px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.featured-title{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.featured-title h2{
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 10px 0px;
+  color: rgb(238,255,216);
+  background-color: darkseagreen;
+
+  font-family: Helvetica, Arial;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  font-weight: lighter;
+  text-align: center;
+  position: relative;
+  -webkit-transform: rotate(-1.5deg);
+  -moz-transform: rotate(-1.5deg);
+  -o-transform: rotate(-1.5deg);
+  -ms-transform: rotate(-1.5deg);
+  transform: rotate(-1.5deg);
+
+  align-self: center;
+}
+
+.featured-title h4{
+  padding: 6px 4px;
+  border-top: 1px solid seagreen;
+  border-bottom: 1px solid seagreen;
+  font-family: Helvetica, monospace;
+  font-weight: lighter;
+  font-size: 16px;
+  color: seagreen;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.gallery-item a{
+  text-align: center;
+  padding: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  font-family: Helvetica, Arial;
+  font-size: 14px;
+  font-weight: lighter;
+  background-color: darkseagreen;
+  color: rgb(238,255,216);
+  letter-spacing: 1.5px;
+}
+
+
+/*** LOCATIONS ***/
+
+#locations{
+  background-image: url("../images/img-locations-background.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 600px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(238,255,216);
+}
+
+.locations-title h2{
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 10px 0px;
+  color: darkseagreen;
+  background-color: rgb(238,255,216);
+
+  font-family: Helvetica, Arial;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  font-weight: lighter;
+  text-align: center;
+  position: relative;
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+
+.card-gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  background-color: rgba(143, 188, 143, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, Arial;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  flex: 1 1 auto;
+}
+
+.card h3{
+  text-decoration: underline;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  color: rgb(238,255,216);
+}
+
+.card p {
+  margin: 5px;
+  padding: 5px;
+  font-size: 16px;
+  color: rgb(238,255,216);
+}
+
+
+/*** CONTACT INFO ***/
+
+#contact {
+  background-color: darkseagreen;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact h5, h1{
+  margin: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: Helvetica, monospace;
+  color: rgb(238,255,216);
+}
+
+#contact h1{
+  font-size: 24px;
+  padding: 10px 15px;
+  color: darkseagreen;
+  background-color: rgb(238,255,216);
+  -webkit-transform: rotate(-1.5deg);
+  -moz-transform: rotate(-1.5deg);
+  -o-transform: rotate(-1.5deg);
+  -ms-transform: rotate(-1.5deg);
+  transform: rotate(-1.5deg);
+}
+
+#contact a{
+  text-decoration: none;
+  color: rgb(238,255,216);
+}
+
+/*** FOOTER ***/
+
+#footer{
+  background-color: seagreen;
+  display: flex;
+  align-items: center;
+}
+
+#footer h5{
+  margin: 20px;
+  font-family: Helvetica,monospace;
+  font-size: 10px;
+  font-weight: lighter;
+  color: rgb(238,255,216);
+}
